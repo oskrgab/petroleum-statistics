@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 percentiles = [0.1, 0.5, 0.9]
-cumulatives = [300, 963, 1538]
+cumulatives = [543, 1070, 1950]
 
 dist = st.lognorm
 
-mu = 850
-sigma = 0.65
+mu = 1050
+sigma = 0.5
 n_trials = 1000
 
 values = dist.rvs(sigma, scale=mu, size=n_trials)
